@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    
+   <script>
+	   alert(window.screen.width)
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+</script>
+</head>
+<body>
+	
+	<header>
+		<div class="hd_top">
+			<span class="iconfont fl"><a href="#">&#xe78a;</a></span>
+			<h5 class="fl">Woman, Dresses</h5>
+			<span class="iconfont fr gwc icon-gouwuche2"><i>3</i></span>
+		</div>
+		
+		
+		<div class="hd_btm">
+			<div class="btn1">add to wishlist</div>
+			<div class="btn2">add to cart</div>
+		</div>
+	</header>
+	
+	
+	<div class="banner">
+			<img src="img/banner.jpg" alt="">
+		<p class="text"><span class="fl">Elegant Pink Dresses</span><a href="" class="fr qian">$605,00</a></p>
+	</div>
+	
+	<div class="jia">
+		<a href="#">Description</a>
+	</div>
+	
+	
+	<div class="colour">
+		<h1><img src="img/水(1).png"> Colour:</h1>
+		<h2>Choose a colour for item</h2>
+		<ul class="tiem">
+			<li class="pink"></li>
+			<li class="red"></li>
+			<li class="blue"></li>
+		</ul>
+		<div class="xian">
+			<span></span>
+		</div>
+		<h1 class="h"><img src="img/yijia.png"> Size:</h1>
+		<h2>Size available for this item</h2>
+		<ul class="num">
+			<li>6</li>
+			<li>8</li>
+			<li>10</li>
+			<li>12</li>
+			<li class="last">14</li>
+		</ul>
+	</div>
+	
+	<div class="add">
+		<h1>Add to Cart</h1>
+		<div class="share">
+			<h2>SHARE ON</h2>&nbsp;
+			<span></span>
+		</div>
+		<ul class="foot">
+			<li><span><img src="img/bired.png"><i>666</i></span></li>
+			<li><span><img src="img/f.phg.png"><i>666</i></span></li>
+			<li class="qing"><span><img src="img/weib.png"><i>666</i></span></li>
+		</ul>
+	</div>
+</body>
+</html>
